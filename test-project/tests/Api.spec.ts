@@ -6,7 +6,6 @@ test.describe('apiTests', {
     }, ()=>{
     
     test('api_getPhotos',async ({page})=>{
-        //tests inside or tests outside depends on the style guide, I did both
         (await new ApiHelper(page).requestGET_photos()).assert_photos();
     })
    
